@@ -119,7 +119,7 @@ def mostrarPrimos(n):
 
 #Enunciado 5 
 #Que entra: recibe un diccionario y una matriz 
-#Que hace: Suma las posiciones elegidas por el ususario
+#Que hace: Busca en el diccionario segun las claves ingresadas unos digitos, esto para aumentarlos a una variable llamada "suma" 
 #Que sale: Retorna un entero resultado de la suma
 def sumarValoresMatriz(disp,mat):
     suma=0
