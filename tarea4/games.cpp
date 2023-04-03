@@ -31,14 +31,14 @@ int main() {
                     ans+=palabra1[j];
                 }
                 else if(palabra1[j]<palabra2[j]){
-					if(palabra1.size()<=palabra2.size()){
-							if(palabra1[j]+1<palabra2[j]){
-								if(palabra1.size()-1==j){
+			if(palabra1.size()<=palabra2.size()){
+				if(palabra1[j]+1<palabra2[j]){
+					if(palabra1.size()-1==j){
                         			ans+=palabra1[j];
 								}
-								else{
-									bandera=1;
-									ans+=palabra1[j]+1;
+					else{
+						bandera=1;
+						ans+=palabra1[j]+1;
 								}
                         		
                     		}
@@ -46,42 +46,42 @@ int main() {
                         		if(palabra1.size()-1==j){
                         			ans+=palabra1[j];
 								}
-								else{
-									ans+=palabra1[j]+1;
+					else{
+						ans+=palabra1[j]+1;
 								}
                     		} 
 						}
 					else if(palabra1.size()>palabra2.size()){
-							int k=j;
-							int bandera2=0;
-							while(k<palabra1.size() && bandera2==0){
-								if(palabra1[k]+1==palabra2[j]){
-									if(palabra1.size()-1==k){
-										bandera2=1;
-                        				ans+=palabra1[k];
+						int k=j;
+						int bandera2=0;
+						while(k<palabra1.size() && bandera2==0){
+							if(palabra1[k]+1==palabra2[j]){
+								if(palabra1.size()-1==k){
+									bandera2=1;
+                        						ans+=palabra1[k];
 									}
-									else {
-										if(palabra2.size()-1==k && palabra1[j]!='Z'){
-											if(palabra1[k]>palabra2[j] && palabra2.size()-1==j){
-												ans+=palabra1[k];
+								else {
+									if(palabra2.size()-1==k && palabra1[j]!='Z'){
+										if(palabra1[k]>palabra2[j] && palabra2.size()-1==j){
+											ans+=palabra1[k];
 												
+											}
+										else{
+											if (palabra1[k+1]>palabra2[j] && palabra1[k+1]!='Z'){
+												bandera2=1;
+												ans+=palabra1[k];
+												ans+=palabra1[k+1]+1;
 												}
 											else{
-												if (palabra1[k+1]>palabra2[j] && palabra1[k+1]!='Z'){
-													bandera2=1;
-													ans+=palabra1[k];
-													ans+=palabra1[k+1]+1;
-													}
-												else{
-													ans+=palabra1[k];
-												}
+												ans+=palabra1[k];
+											}
 								
 										}
 									}
-										else{
-											ans+=palabra1[k]+1;
-											bandera2=1;
-											}
+									else{
+										ans+=palabra1[k]+1;
+										bandera2=1;
+										}
 									}
 								}
 								else{
