@@ -1,6 +1,6 @@
 #include "lista.h"
 #include "lista.cpp"
-
+//O(n^2)
 void insertarEnListaOrdenada(Lista &l,int v){
 	if(l.vaciaLista() || v-1==l.longLista()){
 		l.anxLista(v);
