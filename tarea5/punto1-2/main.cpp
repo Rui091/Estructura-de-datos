@@ -1,6 +1,6 @@
 #include "lista.h"
 
-
+//O(n^2)
 int contarOcurrencias(Lista &l,int v){
 	int ans;
 	if (l.vaciaLista()){
@@ -17,6 +17,7 @@ int contarOcurrencias(Lista &l,int v){
 	}
 	return ans;
 }
+//O(n^2)
 Lista obtenerMenores(Lista &l,int v){
 	Lista ans;
 	if((l.vaciaLista())){
