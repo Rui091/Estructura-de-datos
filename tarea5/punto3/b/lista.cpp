@@ -58,7 +58,7 @@ void Lista::insLista(Elemento elem, int pos){
   }
 }
 void Lista::insListaOrdenada(int v){
-	Nodo *nuevo,*tmp,*tmp2;
+	Nodo *nuevo,*tmp;
 	int encontrado=0;
 	tmp=act;
 	nuevo= new Nodo;
