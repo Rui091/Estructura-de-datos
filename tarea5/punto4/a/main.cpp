@@ -1,6 +1,6 @@
 #include "lista.h"
 #include "lista.cpp"
-
+//O(n^2)
 void concatenarListas(Lista &l,Lista &l2){
 	int i=1;
 	while(i<=l2.longLista()){
