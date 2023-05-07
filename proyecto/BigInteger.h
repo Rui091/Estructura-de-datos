@@ -5,6 +5,9 @@ Proyecto: Archivo.h
 Autor: Rui Yu Lei Wu
 Codigo: 8978227
 */
+#ifndef __BIGINTEGER_H
+#define __BIGINTEGER_H
+
 using namespace std;
 
 class BigInteger{
@@ -35,3 +38,4 @@ class BigInteger{
 		
 		
 };
+#endif
